@@ -1,0 +1,124 @@
+/* General background and text */
+html, body, [data-testid="stAppViewContainer"] {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+}
+
+/* Hide header & sidebar toggle */
+[data-testid="stHeader"] { background: rgba(0,0,0,0); }
+div[data-testid="collapsedControl"] { visibility: hidden; }
+
+/* Container */
+.block-container { max-width: 1200px; padding: 2rem; }
+
+/* Main Title */
+.main-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Subtitle */
+.main-subtitle {
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== Flashy Orange Buttons (only change) ===== */
+button, .stButton>button {
+  background: linear-gradient(135deg, #e79932 0%, #f7aa52 100%) !important; /* orange gradient */
+  color: rgb(15, 14, 14) !important;
+  font-weight: 900 !important;       /* extra bold text */
+  font-size: 16px !important;        /* clear and readable */
+  padding: 0.7rem 1.5rem !important;
+  border-radius: 50px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover, .stButton>button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4) !important;
+  background: linear-gradient(135deg, #FF8C00 0%, #FF4500 100%) !important; /* deeper orange on hover */
+}
+
+/* Summary area */
+.summary-area {
+  background: #2b2b3c;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin-bottom: 2rem;
+  color: #f0f0f0;
+}
+
+/* Chat input style - remove extra space */
+.chatbot-wrapper input[type="text"] {
+  background: #2b2b3c !important;
+  color: white !important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 10px 12px !important;
+  width: calc(100% - 24px) !important; /* fills container without extra space */
+  margin-bottom: 0 !important;
+  display: block;
+}
+
+/* Chatbot title */
+.chatbot-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* Chat messages area */
+.chatbot-messages {
+  background: #2b2b3c;
+  padding: 10px;
+  border-radius: 10px;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+/* Message styles */
+.user-msg {
+  color: #00bfff;
+  margin-bottom: 8px;
+}
+
+.bot-msg {
+  color: #adff2f;
+  margin-bottom: 8px;
+}
+
+/* Chat input style */
+input[type="text"] {
+  background: #2b2b3c !important;
+  color: white !important;
+  border-radius: 10px !important;
+  border: none !important;
+  padding: 10px !important;
+  width: 100% !important;
+}
+
+/* Align Send button next to input */
+.chatbot-send-btn {
+  display: flex;
+  justify-content: flex-end;  /* aligns to the right */
+  gap: 10px;
+  margin-top: 5px;
+}
+
+button[key="chat_send"] {
+  width: auto !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 10px !important;
+}
+

@@ -1,0 +1,10 @@
+[theme]
+base = "light"
+primaryColor = "#a4cbf0ff"             # Calm blue accent for buttons/links
+backgroundColor = "#b9bdc5ff"          # Very light grey page background
+secondaryBackgroundColor = "#FFFFFF" # White cards/panels
+textColor = "#0F172A"                # Dark text for readability
+baseRadius = 12                       # Card/input border radius
+buttonRadius = 12                     # Button border radius
+borderColor = "#4f535aff"              # Soft grey borders
+showWidgetBorder = false              # Hide widget borders for cleaner look
