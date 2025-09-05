@@ -1,6 +1,10 @@
-streamlit==1.27.0
-opencv-python
-numpy
-pandas
+streamlit
+openai-whisper
+yt-dlp
+moviepy
+transformers
 torch
+sentencepiece
+pillow==9.5.0
+
 
