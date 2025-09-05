@@ -1,11 +1,12 @@
 streamlit
 openai-whisper
 yt-dlp
-moviepy
 transformers
 torch
 sentencepiece
 pillow>=10.2.0
+moviepy==2.0.0.dev2
+imageio[ffmpeg]
 
 
 
